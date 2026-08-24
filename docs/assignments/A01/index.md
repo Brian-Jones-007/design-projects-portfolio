@@ -56,3 +56,14 @@ I am committed to producing clear, well-reasoned engineering documentation with 
 
 ## Communicate
 
+**Brian Jones**  
+
+My interest in Mechanical Engineering stems from a curiosity about the world. I have always been interested in the way that different things operate, from vehicles, to something simple like a door hinge, asking "Why?" was a constant question in my house. Growing up around different mechanical systems drew me to breaking down mechanisms to understand the innerworkings and manufacturing styles. Pursuing my degree at UNC Charlotte has allowed me to turn that interest into a structured engineering process, giving me the groundwork of the mathematical backing to these aforementioned ideas  
+
+I am developing into a systematic mechanical design engineer who can bridge the gap between the initial concept and a functional implementation of an idea. My goal is to work on complex mechanical systems where precision, component durability, and spatial constraints directly impact it's success. I hold my work to a high standard of documentation, ensuring that every design choice, equation, and assumption is fully transparent so that any colleague or team member can evaluate and build upon my work without friction  
+
+Defending an engineering decision means justifying a design choice using the governing physics, material constraints, and functional requirements rather than personal preference or intuition. It requires demonstrating why a specific concept best satisfies the engineering constraints while acknowledging its trade-offs. This is a skill I'm actively working to build upon throughout my time at UNC Charlotte  
+
+This assignment from creation of my Github account to the finished product took roughly 5 hours
+
+
