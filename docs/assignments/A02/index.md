@@ -8,7 +8,7 @@ The objective of this assignment was to design, analyze, size, and 3D model a tr
 
 ## Analyze
 
-![Initial Parameters Diagram](initialParameters.png)  
+![Initial Parameters Diagram](initialParameters.png)  
 *Figure 0: The beginning parameters were based off of this image*
 
 ---
