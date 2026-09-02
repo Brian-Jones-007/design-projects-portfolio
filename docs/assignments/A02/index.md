@@ -6,7 +6,7 @@ The objective of this assignment was to design, analyze, size, and 3D model an a
 
 ---
 
-![Initial Parameters Diagram](initial_parameters.png)  
+![Initial Parameters Diagram](initialParameters.png)  
 *The beginning parameters were based off of this image*
 
 ---
@@ -23,7 +23,7 @@ To establish the baseline layout of the truss, the spatial coordinates of all jo
 * **Node A (Pin Support):** (0.80, 0.30) m
 * **Applied Forces (P):** +25 kN vertical force at Node C and -25 kN vertical force at Node D
 
-![Global Free Body Diagram](IMG_4323.HEIC)  
+![Global Free Body Diagram](docs/assignments/A02/Global_FBD.JPG)  
 *Figure 1: Global Free Body Diagram showing node coordinates, support reactions, and external loads.*
 
 ---
@@ -36,7 +36,7 @@ Global static equilibrium equations were solved to determine the external reacti
 * **ΣF_y = 0**  ➔  **A_y = +8.333 kN** (acting upward)
 * **ΣF_x = 0**  ➔  **A_x = 0.000 kN**
 
-![Reaction Force Calculations](IMG_4324.HEIC)  
+![Reaction Force Calculations](docs/assignments/A02/Reaction_Force_Calculations.JPG)  
 *Figure 2: Handwritten static equilibrium equations for external support reactions.*
 
 ---
@@ -51,7 +51,7 @@ Internal axial forces for all five structural members were systematically calcul
 * **Member BD:** F_BD = 0.00 kN (Zero-force member)
 * **Member AD:** F_AD = +41.67 kN (Tension) — **Governing Peak Tensile Force**
 
-![Method of Joints Analysis](calc_moj.png)  
+![Method of Joints Analysis](docs/assignments/A02/calc_moj.JPG)  
 *Figure 3: Method of joints force balance and vector breakdown.*
 
 ---
