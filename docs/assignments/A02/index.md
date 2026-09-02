@@ -6,6 +6,11 @@ The objective of this assignment was to design, analyze, size, and 3D model an a
 
 ---
 
+![Initial Parameters Diagram](initial_parameters.png)  
+*The beginning parameters were based off of this image*
+
+---
+
 ## Analyze
 
 ### 1. Geometry & Load Identification
@@ -106,6 +111,10 @@ Native Creo Mass Properties analysis confirmed a total part volume of 1.599 × 1
 
 ---
 
+### CAD File Downloads
+
+* [Download Truss Frame Creo Part File (`truss_frame.prt`)](truss_frame.prt)
+* [Download Universal STEP File (`truss_frame.stp`)](truss_frame.stp)
 ### CAD File Downloads
 
 * [Download Truss Frame Creo Part File (`truss_frame.prt`)](truss_frame.prt)
