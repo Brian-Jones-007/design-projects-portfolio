@@ -63,7 +63,7 @@ Structural member cross-sectional sizing was governed by peak tension member AD 
 * **Allowable Stress:** σ_allow = 350 MPa / 3.5 = **100 MPa**
 * **Minimum Cross-Sectional Area:** A_truss = 41.67 kN / 100 MPa = **462.96 mm²**
 
-![Structural Sizing Computations](calc_sizing.png)  
+![Structural Sizing Computations](calc_sizing.JPG)  
 *Figure 4: Allowable stress, factor of safety, and minimum cross-sectional area calculations.*
 
 ---
@@ -78,7 +78,7 @@ Support pin connections were evaluated under double shear conditions using harde
 
 Rounding up to the nearest standard commercial component size yields a **d_pin = 5.00 mm** diameter pin.
 
-![Pin Sizing Math](calc_pins.png)  
+![Pin Sizing Math](calc_pins.JPG)  
 *Figure 5: Double shear pin sizing and mass property math.*
 
 ---
