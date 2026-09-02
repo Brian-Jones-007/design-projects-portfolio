@@ -112,7 +112,29 @@ Native Creo Mass Properties analysis confirmed a total part volume of 1.477 × 1
 
 ---
 
-### CAD File Downloads
+### 2157 Students Only: Likelihood of Failure Modes in Truss Components
+
+#### Part 1 – Truss Members
+The truss consists of A500 Structural Steel, which has a yield strength of σ_y = 350 MPa. The members can be grouped by their loading conditions (Tension vs. Compression).
+
+**Tension Members (Members AD, CD)**
+1. **Expected Failure Mode:** Yielding.
+2. **Material Type:** A500 Steel is a **ductile** material.
+3. **Support:** Because A500 steel is highly ductile, it will undergo significant plastic deformation (yielding) before reaching its ultimate tensile strength and physically breaking (fracture). The current peak tensile stress in Member AD is approximately 90 MPa (41.67 kN / 462.96 mm²), well below the 350 MPa yield point. Under extreme overloading, the stress would reach 350 MPa, causing the member to stretch rather than fracture abruptly.
+4. **Design Modification:** To reduce the likelihood of yielding, increase the cross-sectional area of the members (e.g., increase the plate thickness to 15 mm, or member width to 45 mm). This distributes the internal force over a larger area, lowering the normal stress.
+
+**Compression Members (Members BA, BC)**
+1. **Expected Failure Mode:** Buckling (Macroscopic Instability).
+2. **Material Type:** A500 Steel is a **ductile** material.
+3. **Support:** While the material itself would fail by compressive yielding if it were a short, thick block, this design uses a flat plate geometry (12 mm thick). Slender compressive members subjected to axial loads are highly susceptible to Euler buckling. They will laterally deflect out-of-plane and collapse long before the internal compressive stress reaches the 350 MPa yield limit.
+4. **Design Modification:** To prevent buckling, increase the Area Moment of Inertia (I) of the cross-section. This can be achieved by increasing the plate thickness, or much more efficiently, by changing the cross-section shape from a flat solid plate to a hollow square or circular tube, which naturally resists out-of-plane bending.
+
+#### Part 2 – Pin Connections
+The joint connections rely on hardened steel pins (5.00 mm diameter, τ_y = 1172 MPa) acting in double shear.
+
+1. **Expected Failure Mode of the Pin:** Direct Shear Failure (or Shear Yielding).
+2. **Support:** According to fundamental mechanics of materials (e.g., *Mechanics of Materials* by R.C. Hibbeler), pins subjected to transverse loads from connecting plates experience high internal shear forces. Because the plates pull in opposite directions, they act like scissors on the pin. If the applied load exceeds the pin's shear capacity, it will cleanly slice across its cross-section. Currently, the maximum shear force is 8.333 kN, causing a shear stress of roughly 212 MPa across the double-shear area, which is safely below the 1172 MPa limit.
+3. **Design Modification:** The simplest way to reduce the likelihood of pin shear failure is to increase the pin diameter (e.g., from 5.00 mm to 8.00 mm). Because shear area is calculated as A = πr², even a small increase in radius quadratically increases the shear area, drastically reducing the internal shear stress.
 
 * [Download Truss Frame Creo Part File (`truss_frame.prt`)](truss_frame1.prt)
 * [Download Universal STEP File (`truss_frame.stp`)](truss_frame.stp)
