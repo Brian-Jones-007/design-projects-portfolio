@@ -23,7 +23,7 @@ To establish the baseline layout of the truss, the spatial coordinates of all jo
 * **Node A (Pin Support):** (0.80, 0.30) m
 * **Applied Forces (P):** +25 kN vertical force at Node C and -25 kN vertical force at Node D
 
-![Global Free Body Diagram](fbd_global.png)  
+![Global Free Body Diagram](IMG_4323.HEIC)  
 *Figure 1: Global Free Body Diagram showing node coordinates, support reactions, and external loads.*
 
 ---
@@ -36,7 +36,7 @@ Global static equilibrium equations were solved to determine the external reacti
 * **ΣF_y = 0**  ➔  **A_y = +8.333 kN** (acting upward)
 * **ΣF_x = 0**  ➔  **A_x = 0.000 kN**
 
-![Reaction Force Calculations](calc_reactions.png)  
+![Reaction Force Calculations](IMG_4324.HEIC)  
 *Figure 2: Handwritten static equilibrium equations for external support reactions.*
 
 ---
