@@ -115,7 +115,3 @@ Native Creo Mass Properties analysis confirmed a total part volume of 1.599 × 1
 
 * [Download Truss Frame Creo Part File (`truss_frame.prt`)](truss_frame.prt)
 * [Download Universal STEP File (`truss_frame.stp`)](truss_frame.stp)
-### CAD File Downloads
-
-* [Download Truss Frame Creo Part File (`truss_frame.prt`)](truss_frame.prt)
-* [Download Universal STEP File (`truss_frame.stp`)](truss_frame.stp)
