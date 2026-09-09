@@ -3,13 +3,16 @@
 ## Objective
 The objective of this assignment is to design a structural bar under direct tension by using two analytical methods: **Parametric Modeling** (axial deflection elongation) and **Finite Element Analysis (FEA)**. The primary goals include relating force, material properties, and geometry to meet a strict deflection limit (delta_max = 0.009 in), verifying yield safety factor constraints (Sy = 40 ksi), and performing a design reflection including stress concentration (Kt) effects.
 
-* **CAD Part Download Link:** [Download Parametric Bar (.F3D / .STEP)](https://github.com/Brian-Jones-007/design-projects-portfolio/blob/main/docs/assignments/A03/bar.STEP)
+* **CAD Part Download Link:** [Download Parametric Bar (.F3D / .STEP)](docs/assignments/A03/Tension_Study.f3d)
 
 ---
 
 ## Parametric Design & Calculations
 
 ### 1. Selected Parameters & Cross-Section
+
+![Hand Sketch of Parametric Bar](sketch.pdf)
+
 * **Applied Direct Tension Load (F):** 400 lbf
 * **Modulus of Elasticity (E):** 10.0 * 10^6 psi / 68.8 GPa (Aluminum)
 * **Yield Strength (Sy):** 40 ksi (40,000 psi) / 275 MPa
@@ -19,6 +22,9 @@ The objective of this assignment is to design a structural bar under direct tens
 * **Cross-Sectional Area (A):** A = w * h = 0.75 in * 0.50 in = 0.375 in^2
 
 ### 2. Axial Elongation Hand-Calculation
+
+![Scanned Hand Calculations](hand_calcs.pdf)
+
 Using the direct tension elongation formula from Machinery's Handbook:
 
 delta = (F * L) / (A * E)
@@ -46,7 +52,7 @@ The bar profile was sketched in Fusion 360 using driving parameters in Modify > 
 * Area = Width * Height (0.375 in^2)
 * Length = (Delta * Area * E) / F -> Evaluated dynamically to 84.375 in.
 
-![CAD Parameters and Annotated Dimensions](images/cad_parametric_setup.png)
+![CAD Parameters and Annotated Dimensions](docs/assignments/A03/Parameters_Table.jpg)
 
 ---
 
@@ -59,7 +65,7 @@ A Static Stress study was configured in the Fusion Simulation workspace:
 #### 1. Deflection Map
 * **Max FEA Deflection (delta_FEA):** 0.00900 in at the free loaded face.
 
-![Deflection Map](images/fea_deflection_map.png)
+![Deflection Map](docs/assignments/A03/Displacement.jpg)
 
 #### 2. von Mises Stress Map & Safety Factor
 * **Max von Mises Stress (sigma_max):** 1,067 psi (1.07 ksi) uniform along the main body.
@@ -67,7 +73,7 @@ A Static Stress study was configured in the Fusion Simulation workspace:
 * **Yield Check:** sigma_max < Sy (1.07 ksi << 40 ksi) -> PASSED
 * **Safety Factor (SF):** SF = Sy / sigma_max = 40,000 psi / 1,067 psi = 37.5
 
-![von Mises Stress Map](images/fea_stress_map.png)
+![von Mises Stress Map](docs/assignments/A03/Stress.jpg)
 
 ---
 
@@ -84,6 +90,9 @@ Percent Difference = (|0.00900 - 0.00900| / 0.00900) * 100% = 0.00%
 * **Trust Verification:** Both models are equally trustworthy for this uniform geometry. If complex stress raisers or asymmetrical constraints were present, FEA would be trusted more.
 
 ### 2. Stress Concentration Analysis (Kt)
+
+![Hand Calculations Work](hand_calcs2.pdf)
+
 Estimating peak stress if a central pin hole (d = 0.25 in) is added to the bar:
 * **Width Ratio (d / w):** 0.25 in / 0.75 in = 0.333
 * **Stress Concentration Factor (Kt):** ~2.30 (from Peterson's Stress Concentration Factors)
