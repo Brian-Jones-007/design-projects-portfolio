@@ -52,7 +52,7 @@ The bar profile was sketched in Fusion 360 using driving parameters in Modify > 
 * Area = Width * Height (0.375 in^2)
 * Length = (Delta * Area * E) / F -> Evaluated dynamically to 84.375 in.
 
-![CAD Parameters and Annotated Dimensions](docs/assignments/A03/Parameters_Table.JPG)
+![CAD Parameters and Annotated Dimensions](Parameters_Table.JPG)
 
 ---
 
@@ -65,7 +65,7 @@ A Static Stress study was configured in the Fusion Simulation workspace:
 #### 1. Deflection Map
 * **Max FEA Deflection (delta_FEA):** 0.00900 in at the free loaded face.
 
-![Deflection Map](docs/assignments/A03/Displacement.jpg)
+![Deflection Map](Displacement.jpg)
 
 #### 2. von Mises Stress Map & Safety Factor
 * **Max von Mises Stress (sigma_max):** 1,067 psi (1.07 ksi) uniform along the main body.
@@ -73,7 +73,7 @@ A Static Stress study was configured in the Fusion Simulation workspace:
 * **Yield Check:** sigma_max < Sy (1.07 ksi << 40 ksi) -> PASSED
 * **Safety Factor (SF):** SF = Sy / sigma_max = 40,000 psi / 1,067 psi = 37.5
 
-![von Mises Stress Map](docs/assignments/A03/Stress.jpg)
+![von Mises Stress Map](Stress.jpg)
 
 ---
 
