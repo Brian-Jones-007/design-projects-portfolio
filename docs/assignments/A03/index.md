@@ -52,7 +52,7 @@ The bar profile was sketched in Fusion 360 using driving parameters in Modify > 
 * Area = Width * Height (0.375 in^2)
 * Length = (Delta * Area * E) / F -> Evaluated dynamically to 84.375 in.
 
-![CAD Parameters and Annotated Dimensions](docs/assignments/A03/Parameters_Table.jpg)
+![CAD Parameters and Annotated Dimensions](docs/assignments/A03/Parameters_Table.JPG)
 
 ---
 
