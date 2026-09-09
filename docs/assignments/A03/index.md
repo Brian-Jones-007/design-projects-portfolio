@@ -11,7 +11,7 @@ The objective of this assignment is to design a structural bar under direct tens
 
 ### 1. Selected Parameters & Cross-Section
 
-![Hand Sketch of Parametric Bar](sketch.pdf)
+![Hand Sketch of Parametric Bar](sketch.jpg)
 
 * **Applied Direct Tension Load (F):** 400 lbf
 * **Modulus of Elasticity (E):** 10.0 * 10^6 psi / 68.8 GPa (Aluminum)
@@ -23,7 +23,7 @@ The objective of this assignment is to design a structural bar under direct tens
 
 ### 2. Axial Elongation Hand-Calculation
 
-![Scanned Hand Calculations](hand_calcs.pdf)
+![Scanned Hand Calculations](hand_calcs.jpg)
 
 Using the direct tension elongation formula from Machinery's Handbook:
 
@@ -91,7 +91,7 @@ Percent Difference = (|0.00900 - 0.00900| / 0.00900) * 100% = 0.00%
 
 ### 2. Stress Concentration Analysis (Kt)
 
-![Hand Calculations Work](hand_calcs2.pdf)
+![Hand Calculations Work](hand_calcs2.jpg)
 
 Estimating peak stress if a central pin hole (d = 0.25 in) is added to the bar:
 * **Width Ratio (d / w):** 0.25 in / 0.75 in = 0.333
