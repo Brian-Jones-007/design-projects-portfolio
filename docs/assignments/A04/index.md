@@ -32,6 +32,9 @@
 *Figure 1: Free body diagram of Feature 1 modeled as a cantilever beam with fixed reaction moment M<sub>max</sub> = P &times; L<sub>1</sub> and vertical reaction force R<sub>y</sub> = P = 300 N.*
 
 ### Symbolic Modeling
+
+![Hand Calculations - Symbolic Solve Feature 1](SymbolicSolve1.JPG)  
+
 1. **Section Moment of Inertia**:
    *I*<sub>1</sub> = (*b*<sub>1</sub> &times; *h*<sub>1</sub><sup>3</sup>) / 12
 
@@ -45,6 +48,9 @@
    &delta;<sub>max</sub> &le; 0.30 mm &rArr; (*b*<sub>1</sub> &times; *h*<sub>1</sub><sup>3</sup>) &ge; (4 &times; *P* &times; *L*<sub>1</sub><sup>3</sup>) / (*E* &times; &delta;<sub>allow</sub>)
 
 ### Numerical Solution
+
+![Hand Calculations - Numerical Solve Feature 1](NumberSolve1.JPG)  
+
 * **Yield Stress Constraint**:
   *b*<sub>1</sub> &times; *h*<sub>1</sub><sup>2</sup> &ge; (18 &times; 300 &times; 0.03) / (50 &times; 10<sup>6</sup>) = 3.24 &times; 10<sup>-6</sup> m<sup>3</sup>  
   *h*<sub>1</sub> &ge; &radic;((3.24 &times; 10<sup>-6</sup>) / 0.03) = 0.0104 m = **10.4 mm**
@@ -77,6 +83,9 @@
 *Figure 2: Free body diagram of Feature 2 attaching to Rigid Wall A showing internal shear force V(x) and bending moment M(x) distribution.*
 
 ### Symbolic Modeling
+
+![Hand Calculations - Symbolic Solve Feature 2](SymbolicSolve2.JPG)  
+
 1. **Section Moment of Inertia**:
    *I*<sub>2</sub> = (*b*<sub>2</sub> &times; *h*<sub>2</sub><sup>3</sup>) / 12
 
@@ -87,6 +96,9 @@
    &delta;<sub>max</sub> = (4 &times; *P* &times; *L*<sub>2</sub><sup>3</sup>) / (*E* &times; *b*<sub>2</sub> &times; *h*<sub>2</sub><sup>3</sup>) &le; &delta;<sub>allow</sub> &rArr; (*b*<sub>2</sub> &times; *h*<sub>2</sub><sup>3</sup>) &ge; (4 &times; *P* &times; *L*<sub>2</sub><sup>3</sup>) / (*E* &times; &delta;<sub>allow</sub>)
 
 ### Numerical Solution
+
+![Hand Calculations - Numerical Solve Feature 2](NumberSolve2.JPG)  
+
 * **Yield Stress Constraint**:
   *b*<sub>2</sub> &times; *h*<sub>2</sub><sup>2</sup> &ge; (18 &times; 300 &times; 0.04) / (50 &times; 10<sup>6</sup>) = 4.32 &times; 10<sup>-6</sup> m<sup>3</sup> &rArr; *h*<sub>2</sub> &ge; **10.4 mm**
 
