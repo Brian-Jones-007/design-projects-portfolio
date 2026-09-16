@@ -28,7 +28,6 @@
 
 ### Free Body Diagram (FBD)
 ![Feature 1 FBD](FBD1.JPG)  
-
 *Figure 1: Free body diagram of Feature 1 modeled as a cantilever beam with fixed reaction moment M<sub>max</sub> = P &times; L<sub>1</sub> and vertical reaction force R<sub>y</sub> = P = 300 N.*
 
 ### Symbolic Modeling
@@ -79,7 +78,6 @@
 
 ### Free Body Diagram (FBD)
 ![Feature 2 FBD](FBD2.JPG)  
-
 *Figure 2: Free body diagram of Feature 2 attaching to Rigid Wall A showing internal shear force V(x) and bending moment M(x) distribution.*
 
 ### Symbolic Modeling
@@ -114,7 +112,7 @@
 
 Below is the isometric hand sketch showing the fully dimensioned motor mount assembly incorporating the four M3 motor plate holes, central motor shaft clearance hole, four M3 wall attachment clearance holes, and a corner fillet transition.
 
-![Isometric Concept Sketch](SketchMotorMount.JPG)
+![Isometric Concept Sketch](SketchMotorMount.JPG)  
 *Figure 3: Isometric hand sketch with explicit dimension callouts (b<sub>1</sub> = 30 mm, h<sub>1</sub> = 11 mm, b<sub>2</sub> = 40 mm, h<sub>2</sub> = 13 mm, L<sub>2</sub> = 40 mm).*
 
 ---
@@ -141,7 +139,7 @@ The 3D model was constructed parametrically in Fusion 360 using driving global p
 ### CAD Renders & Features
 To reduce stress concentrations under the 300 N shaft load, a 3 mm fillet was modeled at the internal 90° junction.
 
-![Fusion 360 Model Render](cad_render.jpg)
+![Fusion 360 Model Render](cad_render.jpg)  
 *Figure 4: Parametric CAD model rendered in Fusion 360 showing clearance holes and internal corner fillet.*
 
 ### CAD File Download
@@ -154,7 +152,7 @@ To reduce stress concentrations under the 300 N shaft load, a 3 mm fillet was mo
 
 The Third-Angle Projection engineering drawing sheet includes Front, Top, Right Side, and Shaded Isometric views, fully dimensioned per ASME standards with proper centerlines, center marks, and hole callouts.
 
-![MEGR 2157 Multiview Drawing Sheet](./megr2157_multiview_drawing.png)
+![MEGR 2157 Multiview Drawing Sheet](./megr2157_multiview_drawing.png)  
 *Figure 5: ASME Third-Angle Projection multiview drawing generated in Fusion 360.*
 
 * [Download Drawing Sheet PDF](./megr2157_multiview_drawing.pdf)
