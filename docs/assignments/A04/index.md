@@ -171,8 +171,8 @@ The Third-Angle Projection engineering drawing sheet includes Front, Top, Right 
 * **FBDs & Hand Sketching**: 1.0 Hour
 * **Fusion 360 Parametric CAD**: 2.0 Hours
 * **MEGR 2157 Multiview Drawing**: 1.0 Hour
-* **Portfolio Documentation**: 1.0 Hour
-* **Total Time**: **7.5 Hours**
+* **Portfolio Documentation**: 3.0 Hours
+* **Total Time**: **9.5 Hours**
 
 ---
 
