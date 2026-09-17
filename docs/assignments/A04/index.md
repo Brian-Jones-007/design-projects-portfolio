@@ -155,7 +155,7 @@ The Third-Angle Projection engineering drawing sheet includes Front, Top, Right 
 ![MEGR 2157 Multiview Drawing Sheet](IsometricMotor.JPG)  
 *Figure 5: ASME Third-Angle Projection multiview drawing generated in Fusion 360.*
 
-* [Download Drawing Sheet PDF](IsomatricMotor.pdf)
+* [Download Drawing Sheet PDF](IsometricMotor.pdf)
 
 ---
 
