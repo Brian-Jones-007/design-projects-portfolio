@@ -152,10 +152,10 @@ To reduce stress concentrations under the 300 N shaft load, a 3 mm fillet was mo
 
 The Third-Angle Projection engineering drawing sheet includes Front, Top, Right Side, and Shaded Isometric views, fully dimensioned per ASME standards with proper centerlines, center marks, and hole callouts.
 
-![MEGR 2157 Multiview Drawing Sheet](./megr2157_multiview_drawing.png)  
+![MEGR 2157 Multiview Drawing Sheet](IsometricMotor.JPG)  
 *Figure 5: ASME Third-Angle Projection multiview drawing generated in Fusion 360.*
 
-* [Download Drawing Sheet PDF](./megr2157_multiview_drawing.pdf)
+* [Download Drawing Sheet PDF](IsomatricMotor.pdf)
 
 ---
 
