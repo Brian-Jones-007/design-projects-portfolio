@@ -144,7 +144,7 @@ To reduce stress concentrations under the 300 N shaft load, a 3 mm fillet was mo
 
 ### CAD File Download
 * [Download STEP Model (.step)](Motor_Mount.step)
-* [Download STL Model (.stl)](Motor_Mount.stl)
+* [Download f3d Model (.f3d)](Motor_Mount.f3d)
 
 ---
 
