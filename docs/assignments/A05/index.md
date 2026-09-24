@@ -134,7 +134,8 @@ The final CAD geometry incorporates the governing (largest calculated) dimension
 * **Feature D Section Inertia:** I = 0.03125 in^4 (Governed by Stiffness)
 * **Feature E Section Inertia:** I = 0.0160 in^4 (Governed by Stiffness)
 
-* **Download Native CAD File:** [Download Bracket 3D Model (CAD)](Bracket_Mount.f3d)
+* **Download Native CAD File:** [Download Bracket 3D Model (CAD)](PK
+)
 
 
 ---
