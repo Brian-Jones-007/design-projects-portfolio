@@ -81,7 +81,7 @@ A multiview drawing was generated using the **ASME (Inches)** standard on a Size
    * **Class b (Close Free-Running Fit):** +/- 0.0020 in
    * **Class c (Accurate Location / Min Play):** +/- 0.0008 in
 
-![Multiview Engineering Drawing](Bracket_Drawing.pdf)
+![Multiview Engineering Drawing](Engineering_Drawing.jpg)
 
 ---
 
