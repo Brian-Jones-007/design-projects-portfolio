@@ -53,7 +53,7 @@ Every feature dimension was defined dynamically using expressions in the **Param
 | `h_s` | `0.800` | `in` | 0.800 in | T-beam stem height |
 | `t_s` | `0.200` | `in` | 0.200 in | T-beam stem thickness |
 
-![Parametric Parameters Table](parameters_table_screenshot.png)
+![Parametric Parameters Table](Parameters_Table_A6.jpg)
 
 ---
 
@@ -65,7 +65,9 @@ Each sketch feature in CAD uses the `fx:` dimension constraint referencing user 
 * **Feature D Sketch:** Column height L_D = 2.500 in (`fx: L_D`), wall thickness t_D = 0.350 in (`fx: t_D`).
 * **Feature E T-Section Sketch:** Flange b_f = 1.250 in, t_f = 0.200 in, stem h_s = 0.800 in, t_s = 0.200 in.
 
-![Dimensioned Parametric Sketch](sketch_fx_dimensions.png)
+![Dimensioned Parametric Sketch A-B](PARTS_A-B.jpg)
+![Dimensioned Parametric Sketch C](FEATURE_C.jpg)
+![Dimensioned Parametric Sketch D](FEATURE_D.jpg)
 
 ---
 
@@ -79,12 +81,12 @@ A multiview drawing was generated using the **ASME (Inches)** standard on a Size
    * **Class b (Close Free-Running Fit):** +/- 0.0020 in
    * **Class c (Accurate Location / Min Play):** +/- 0.0008 in
 
-![Multiview Engineering Drawing](engineering_drawing_export.png)
+![Multiview Engineering Drawing](Bracket_Drawing.pdf)
 
 ---
 
 ## CAD Download Link
-* [Download Native Fusion 360 CAD File (.f3d)](INSERT_YOUR_PUBLIC_CLOUD_LINK_HERE)
+* [Download Native Fusion 360 CAD File (.f3d)]([INSERT_YOUR_PUBLIC_CLOUD_LINK_HERE](https://drive.google.com/file/d/17sQ0oP1MyfBEhUAjyfRPdpSjzojKcJPF/view?usp=drive_link))
 
 ---
 
