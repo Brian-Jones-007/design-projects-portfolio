@@ -54,39 +54,39 @@ Through an **Outer Loop** (geometry design optimization) and an **Inner Loop** (
 ### Visual Documentation & Artifacts
 
 #### Design I
-![Design I Von Mises Stress](images/design1_stress.png)
+![Design I Von Mises Stress](Von_Mises1.jpg)
 *Figure 1: Design I Von Mises Stress Plot with Maximum Tag (9.66 MPa).*
 
-![Design I Displacement](images/design1_displacement.png)
+![Design I Displacement](Displacement1.jpg)
 *Figure 2: Design I Displacement Plot with Maximum Tag (0.03 mm).*
 
-![Design I Mesh Density](images/design1_mesh.png)
+![Design I Mesh Density](Mesh_view1.jpg)
 *Figure 3: Design I Converged Mesh View (4,013 Elements).*
 
 #### Design II
-![Design II Von Mises Stress](images/design2_stress.png)
+![Design II Von Mises Stress](Von_Mises2.jpg)
 *Figure 4: Design II Von Mises Stress Plot with Maximum Tag (13.83 MPa).*
 
-![Design II Displacement](images/design2_displacement.png)
+![Design II Displacement](Displacement2.jpg)
 *Figure 5: Design II Displacement Plot with Maximum Tag (0.03 mm).*
 
-![Design II Mesh Density](images/design2_mesh.png)
+![Design II Mesh Density](Mesh_view1.jpg)
 *Figure 6: Design II Converged Mesh View (4,727 Elements).*
 
 #### Design III
-![Design III Von Mises Stress](images/design3_stress.png)
+![Design III Von Mises Stress](Von_Mises3.jpg)
 *Figure 7: Design III Von Mises Stress Plot with Maximum Tag (10.17 MPa).*
 
-![Design III Displacement](images/design3_displacement.png)
+![Design III Displacement](Displacement3.jpg)
 *Figure 8: Design III Displacement Plot with Maximum Tag (0.03 mm).*
 
-![Design III Mesh Density](images/design3_mesh.png)
+![Design III Mesh Density](Mesh_view1.jpg)
 *Figure 9: Design III Converged Mesh View (4,613 Elements).*
 
 ---
 
 ## Downloads & CAD Data
-* [Download Bracket CAD Model Files](https://github.com/Brian-Jones-007/design-projects-portfolio/tree/main/docs/assignments/A07/cad)
+* [Download Bracket CAD Model Files](https://drive.google.com/file/d/1-39v8GK5lwWmjDSSBnoyUQHGFqZ-zOqV/view?usp=drive_link)
 
 ---
 
