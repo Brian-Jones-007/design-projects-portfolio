@@ -86,7 +86,7 @@ Through an **Outer Loop** (geometry design optimization) and an **Inner Loop** (
 ---
 
 ## Downloads & CAD Data
-* [Download Bracket CAD Model Files](https://drive.google.com/file/d/1-39v8GK5lwWmjDSSBnoyUQHGFqZ-zOqV/view?usp=drive_link)
+* [Download Bracket CAD Model Files](docs/assignments/A07/Bracket_Mount_study1.f3d)
 
 ---
 
