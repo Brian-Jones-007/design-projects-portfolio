@@ -8,7 +8,7 @@ Design a two-pulley power transmission system operating between parallel axes se
 
 ---
 
-## 1. Belt Design (25%)
+## 1. Belt Design
 
 ### 1a. Knowns and Unknowns
 
@@ -109,7 +109,7 @@ Design a two-pulley power transmission system operating between parallel axes se
 
 ---
 
-## 2. Shaft Diameter Design (25%)
+## 2. Shaft Diameter Design 
 
 ### 2a. Knowns and Unknowns
 * Shaft Material: 1060 Hardened Steel
@@ -163,7 +163,7 @@ Design a two-pulley power transmission system operating between parallel axes se
 
 ---
 
-## 3. Journal Bearing Design (30%)
+## 3. Journal Bearing Design 
 
 ### 3a. Knowns and Unknowns
 * Radial Load ($W$): $W = F_1 + F_2 = 10.0\text{ lbf}$
@@ -226,7 +226,7 @@ Design a two-pulley power transmission system operating between parallel axes se
 
 ---
 
-## 4. Frame Support Design (15%)
+## 4. Frame Support Design 
 
 <p align="center">
   <img src="path/to/your/frame-design-image.png" alt="Frame CAD Diagram" width="80%"/>
@@ -237,7 +237,7 @@ Design a two-pulley power transmission system operating between parallel axes se
 
 ---
 
-## 5. Engineering Lessons Learned (5%)
+## 5. Engineering Lessons Learned 
 
 1. Quantifying how initial pre-tension ($T_0$) directly drives radial bearing loads demonstrated the critical trade-off between belt torque capacity and journal bearing frictional heating ($PV$ rating).
 2. Sizing components based on standard stock catalog dimensions (McMaster-Carr) highlighted the necessity of rounding calculated minimums (e.g., $d_{\text{belt}} = 0.246\text{ in}$ up to stock $0.250\text{ in}$) early to maintain manufacturing feasibility.
