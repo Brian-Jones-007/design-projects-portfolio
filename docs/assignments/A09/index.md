@@ -127,6 +127,8 @@ Design a two-pulley power transmission system operating between parallel axes se
 
 * Shear force and bending/torsional moment loads applied at the pulley mounting position balancing reaction forces at bearing supports.
 
+---
+
 ### 2c. Symbolic Equations
 
 1. **Allowable Shear Stress:**
