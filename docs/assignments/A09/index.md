@@ -1,4 +1,4 @@
-# A9 - Pulley System Design
+# A9 - Pulley System Design:
 
 ---
 
