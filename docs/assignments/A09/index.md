@@ -1,10 +1,5 @@
 # A9 - Pulley System Design
 
-**Course:** MEGR 2156 - Design Project  
-**Author:** Brian Jones  
-**Date:** November 5, 2026  
-**Total Execution Time:** 7.5 Hours  
-
 ---
 
 ## Objective
