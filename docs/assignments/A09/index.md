@@ -18,11 +18,11 @@ Design a two-pulley power transmission system operating between parallel axes se
 * Selected Rotational Speed: N = 1500 rpm (Allowed range: 1000 to 2000 rpm)
 * Selected Static Belt Tension: T0 = 5.0 lbf (Allowed range: 4 to 6 lbf)
 * Belt Material: Polyurethane Rubber
-* Material Yield Strength (sigma_y): 3.25 MPa = 471.37 psi (at 20% strain)
+* Material Yield Strength (σ_y): 3.25 MPa = 471.37 psi (at 20% strain)
 * Minimum Factor of Safety (SF): 3.0
 
 #### Unknown Parameters
-* Maximum Allowable Stress (sigma_allow)
+* Maximum Allowable Stress (σ_allow)
 * Tight-Side Operating Tension (F1)
 * Loose-Side Operating Tension (F2)
 * Minimum Belt Cross-Sectional Area (A_min)
@@ -35,7 +35,7 @@ Design a two-pulley power transmission system operating between parallel axes se
 
 ![Belt/Pulley System Free-Body Diagram](path/to/your/belt-fbd-image.png)
 
-* Arc of Contact (theta_1 = theta_2): pi rad = 180 deg
+* Arc of Contact (θ_1 = θ_2): π rad = 180 deg
 * Static Tension Balance: F1 + F2 = 2 * T0 = 10.0 lbf
 
 ---
@@ -43,23 +43,23 @@ Design a two-pulley power transmission system operating between parallel axes se
 ### 1c. Symbolic Model & Governing Equations
 
 1. Allowable Normal Stress:
-   sigma_allow = sigma_y / SF
+   σ_allow = σ_y / SF
 
 2. Belt Tension Equilibrium under Maximum Torque (No-Slip Condition):
    F1 + F2 = 2 * T0
-   F1 / F2 = e^(mu * theta)
+   F1 / F2 = e^(μ * θ)
 
 3. Tight-Side Tension (F1) symbolically in terms of Pre-tension (T0):
-   F1 = T0 * [ (2 * e^(mu * theta)) / (1 + e^(mu * theta)) ]
+   F1 = T0 * [ (2 * e^(μ * θ)) / (1 + e^(μ * θ)) ]
 
 4. Required Belt Cross-Sectional Area (A_min):
-   A_min = F1 / sigma_allow
+   A_min = F1 / σ_allow
 
 5. Minimum Belt Cross-Section Diameter (d_belt):
-   d_belt = sqrt( (4 * A_min) / pi )
+   d_belt = sqrt( (4 * A_min) / π )
 
 6. Belt Pitch Length / Outer Circumference (L):
-   L = (pi * D) + (2 * C)
+   L = (π * D) + (2 * C)
 
 ---
 
@@ -67,10 +67,10 @@ Design a two-pulley power transmission system operating between parallel axes se
 
 #### Calculations
 1. Allowable Normal Stress:
-   sigma_allow = 471.37 psi / 3 = 157.12 psi
+   σ_allow = 471.37 psi / 3 = 157.12 psi
 
 2. Tight-Side Tension (F1):
-   Assuming coefficient of friction mu = 0.35 and wrap angle theta = pi rad (e^(0.35 * pi) = 3.0):
+   Assuming coefficient of friction μ = 0.35 and wrap angle θ = π rad (e^(0.35 * π) = 3.0):
    F1 = 5.0 lbf * [ (2 * 3.0) / (1 + 3.0) ] = 7.50 lbf
 
 3. Loose-Side Tension (F2):
@@ -80,10 +80,10 @@ Design a two-pulley power transmission system operating between parallel axes se
    A_min = 7.50 lbf / 157.12 psi = 0.0477 sq in
 
 5. Minimum Belt Diameter:
-   d_belt = sqrt( (4 * 0.0477 sq in) / pi ) = 0.246 in
+   d_belt = sqrt( (4 * 0.0477 sq in) / π ) = 0.246 in
 
 6. Pitch Length:
-   L = (pi * 3.0 in) + (2 * 5.0 in) = 9.425 in + 10.0 in = 19.425 in
+   L = (π * 3.0 in) + (2 * 5.0 in) = 9.425 in + 10.0 in = 19.425 in
 
 #### Component Selection
 * Selected Product: High-Flex Polyurethane Round Belt
@@ -97,8 +97,8 @@ Design a two-pulley power transmission system operating between parallel axes se
 
 ### 2a. Knowns and Unknowns
 * Shaft Material: 1060 Hardened Steel
-* Tensile Yield Strength (sigma_y): ~90,000 psi
-* Shear Yield Strength (tau_y): 0.577 * sigma_y = 51,930 psi
+* Tensile Yield Strength (σ_y): ~90,000 psi
+* Shear Yield Strength (τ_y): 0.577 * σ_y = 51,930 psi
 * Safety Factor (SF): 3.0
 * Transmitted Torque (T): T = (F1 - F2) * (D / 2)
 * Unknown: Minimum Shaft Diameter (d_shaft)
@@ -110,14 +110,14 @@ Design a two-pulley power transmission system operating between parallel axes se
 * Shear force and bending/torsional moment loads applied at the pulley mounting position balancing reaction forces at bearing supports.
 
 ### 2c. Symbolic Equations
-1. Allowable Shear Stress: tau_allow = tau_y / SF
-2. Torsional Stress: tau = (16 * T) / (pi * d_shaft^3)
-3. Minimum Shaft Diameter: d_shaft = [ (16 * T) / (pi * tau_allow) ]^(1/3)
+1. Allowable Shear Stress: τ_allow = τ_y / SF
+2. Torsional Stress: τ = (16 * T) / (π * d_shaft^3)
+3. Minimum Shaft Diameter: d_shaft = [ (16 * T) / (π * τ_allow) ]^(1/3)
 
 ### 2d. Numerical Solution
 * Transmitted Torque: T = (7.50 lbf - 2.50 lbf) * (1.5 in) = 7.50 in-lbf
-* Allowable Shear Stress: tau_allow = 51,930 psi / 3 = 17,310 psi
-* Minimum Shaft Diameter: d_shaft = [ (16 * 7.50 in-lbf) / (pi * 17,310 psi) ]^(1/3) = 0.130 in
+* Allowable Shear Stress: τ_allow = 51,930 psi / 3 = 17,310 psi
+* Minimum Shaft Diameter: d_shaft = [ (16 * 7.50 in-lbf) / (π * 17,310 psi) ]^(1/3) = 0.130 in
 * Selected Standard Shaft Diameter: 3/8 in (0.375 in)
 
 ---
@@ -140,12 +140,12 @@ Design a two-pulley power transmission system operating between parallel axes se
 ### 3c. Symbolic Model
 1. Projected Area: A_b = d_shaft * L_b
 2. Bearing Pressure: P = W / (d_shaft * L_b)
-3. Linear Surface Speed: V = (pi * d_shaft * N) / 12  [ft/min]
+3. Linear Surface Speed: V = (π * d_shaft * N) / 12  [ft/min]
 4. PV Rating: PV = P * V
 
 ### 3d. Numerical Solution
 * Bearing Pressure: P = 10.0 lbf / (0.375 in * 0.50 in) = 53.33 psi
-* Linear Velocity: V = (pi * 0.375 in * 1500 rpm) / 12 = 147.26 ft/min
+* Linear Velocity: V = (π * 0.375 in * 1500 rpm) / 12 = 147.26 ft/min
 * PV Rating: PV = 53.33 psi * 147.26 ft/min = 7,853 psi-ft/min
 
 ### 3e. Material Selection
