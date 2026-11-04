@@ -46,10 +46,13 @@ Design a two-pulley power transmission system operating between parallel axes se
    $$\sigma_{\text{allow}} = \frac{\sigma_y}{SF}$$
 
 2. **Belt Tension Equilibrium under Maximum Torque (No-Slip Condition):**
+
    $$F_1 + F_2 = 2 T_0$$
+
    $$\frac{F_1}{F_2} = e^{\mu \theta}$$
 
 3. **Tight-Side Tension ($F_1$) symbolically in terms of Pre-tension ($T_0$):**
+
    $$F_1 = T_0 \left( \frac{2 e^{\mu \theta}}{1 + e^{\mu \theta}} \right)$$
 
 4. **Required Belt Cross-Sectional Area ($A_{\text{min}}$):**
