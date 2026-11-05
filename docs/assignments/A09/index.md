@@ -225,7 +225,7 @@ Design a two-pulley power transmission system operating between parallel axes se
 ## 4. Frame Support Design 
 
 <p align="center">
-  <img src="path/to/your/frame-design-image.png" alt="Frame CAD Diagram" width="80%"/>
+  <img src=Belt_Sweep.jpg alt="Frame CAD Diagram" width="80%"/>
 </p>
 
 * Frame Concept: A-Frame structural assembly constructed from 6061-T6 aluminum maintaining fixed 5.0 in center-to-center shaft alignment.
