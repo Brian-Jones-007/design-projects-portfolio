@@ -34,7 +34,7 @@ Design a two-pulley power transmission system operating between parallel axes se
 ### 1b. Free-Body Diagram (FBD) of Belt/Pulley System
 
 <p align="center">
-  <img src="path/to/your/belt-fbd-image.png" alt="Belt/Pulley System Free-Body Diagram" width="80%"/>
+  <img src=IMG_5196.JPG alt="Belt/Pulley System Free-Body Diagram" width="80%"/>
 </p>
 
 * Arc of Contact ($\theta_1 = \theta_2$): $\pi\text{ rad} = 180^\circ$
@@ -122,7 +122,7 @@ Design a two-pulley power transmission system operating between parallel axes se
 ### 2b. FBD of Shafts
 
 <p align="center">
-  <img src="path/to/your/shaft-fbd-image.png" alt="Shaft Free-Body Diagram" width="80%"/>
+  <img src=IMG_5196.JPG alt="Shaft Free-Body Diagram" width="80%"/>
 </p>
 
 * Shear force and bending/torsional moment loads applied at the pulley mounting position balancing reaction forces at bearing supports.
@@ -173,10 +173,6 @@ Design a two-pulley power transmission system operating between parallel axes se
 * Unknowns: Projected Bearing Area ($A_b$), Bearing Pressure ($P$), Linear Velocity ($V$), $PV$ Rating, Selected Material
 
 ### 3b. FBD of Journal Bearing
-
-<p align="center">
-  <img src="path/to/your/journal-bearing-fbd-image.png" alt="Journal Bearing Free-Body Diagram" width="80%"/>
-</p>
 
 * Downward radial load $W$ balanced by uniform contact bearing pressure distributed over projected area ($d_{\text{shaft}} \times L_b$).
 
