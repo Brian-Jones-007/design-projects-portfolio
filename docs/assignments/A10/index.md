@@ -28,7 +28,7 @@ Design and perform structural analysis for a mechanically driven lead-screw cros
     * Minimum minor diameter ($d_{min}$)
 
 * **b. Free Body Diagram (FBD):**
-  ![Lead Screw Axial Tension FBD](images/fbd_leadscrew_axial.png)
+  ![Lead Screw Axial Tension FBD](fbd_leadscrew_axial.JPG)
 
 * **c. Symbolic Solution:**
 
@@ -56,7 +56,7 @@ $$d_{min} = \sqrt{\frac{4 \times (4) \times 1000\text{ N}}{\pi \times (300 \time
     * Maximum rotational speed ($RPM_{max}$)
 
 * **b. Free Body Diagram (FBD):**
-  ![Rotational Speed to Velocity Diagram](images/fbd_rotational_speed.png)
+  ![Rotational Speed to Velocity Diagram](fbd_rotational_speed.JPG)
 
 * **c. Symbolic Solution:**
 
@@ -85,7 +85,7 @@ $$RPM_{max} = \frac{50\text{ mm/min}}{2.54\text{ mm/rev}} \approx 19.69\text{ RP
     * Required driving torque per screw ($T_{screw}$)
 
 * **b. Free Body Diagram (FBD):**
-  ![Lead Screw Thread Friction and Torque FBD](images/fbd_leadscrew_torque.png)
+  ![Lead Screw Thread Friction and Torque FBD](fbd_leadscrew_torque.JPG)
 
 * **c. Symbolic Solution:**
 
