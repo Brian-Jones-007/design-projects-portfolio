@@ -2,7 +2,7 @@
 
 **Team Section Contributions:**
 * **Calculations / Free Body Diagrams:** Brian Jones
-* **Parametrically Model (CAD):** [Groupmate 2 Name]
+* **Parametrically Model (CAD):** Antonio Goodson
 * **FEA Analysis:** Jarek Hernandez Acaba
 
 ---
@@ -198,12 +198,12 @@ $$h_{min, stiffness} = \sqrt[3]{\frac{12 \cdot (4.838 \times 10^{-8})}{0.040}} \
 
 ---
 
-### Task 3.4 — Multiview Paper Sketch of Crosshead - (____________)
+### Task 3.4 — Multiview Paper Sketch of Crosshead - Antonio Goodson
 
 
 ---
 
-## Section 4: Parametrically Model (CAD) - (____________)
+## Section 4: Parametrically Model (CAD) - Antonio Goodson
 
 
 ---
