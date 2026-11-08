@@ -119,7 +119,7 @@ $$T_{screw} = \frac{1000 \cdot 0.01143}{2} \left[ \frac{0.00254 + \pi (0.15)(0.0
     * Actual thread bearing stress ($\sigma_b$)
 
 * **b. Free Body Diagram (FBD):**
-  ![Nut Thread Bearing Stress FBD](images/fbd_nut_bearing.png)
+  ![Nut Thread Bearing Stress FBD](fbd_nut_bearing.JPG)
 
 * **c. Symbolic Solution:**
 
@@ -152,7 +152,7 @@ $$\sigma_b = \frac{1000\text{ N}}{3.12 \times 10^{-4}\text{ m}^2} \approx 3.20\t
     * Minimum required height for strength ($h_{min, strength}$)
 
 * **b. Free Body Diagram (FBD):**
-  ![Crosshead Beam Bending FBD and Shear Moment Diagram](images/fbd_crosshead_beam.png)
+  ![Crosshead Beam Bending FBD and Shear Moment Diagram](fbd_crosshead_beam.JPG)
 
 * **c. Symbolic Solution:**
 
@@ -180,7 +180,7 @@ $$h_{min, strength} = \sqrt{\frac{6 \cdot 100}{0.040 \cdot (69 \times 10^6)}} \a
     * Minimum required height for stiffness ($h_{min, stiffness}$)
 
 * **b. Free Body Diagram (FBD):**
-  ![Crosshead Beam Deflection FBD](images/fbd_crosshead_deflection.png)
+  ![Crosshead Beam Deflection FBD](fbd_crosshead_deflection.JPG)
 
 * **c. Symbolic Solution:**
 
