@@ -370,3 +370,5 @@ For my part it was more a review from A7 regarding the FEA of a bracket and how 
 [Rev2Part](MODIFIEDCrosshead.SLDPRT)
 
 [Rev2DRW](MODIFIEDCrosshead.SLDDRW)
+
+[Assembly](Assembly.zip)
