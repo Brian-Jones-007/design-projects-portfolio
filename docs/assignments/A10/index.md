@@ -331,7 +331,7 @@ The crosshead was loaded to 2kN; the max stress shows that peak stresses were co
 ![D2SF](D2SF.PNG)
 ![D2Stress](D2STRESS.PNG)
 
-To meet the minimum SF of 4, we increased the crosshead thickness to 1.25 in and reevaluated it under the same 2 kN load. The stress decreased to a max of 1.22 * 10^7 N/m^2 around the previous area, as before. The deflection was minimal, with a maximum displacement of 6.60 * 10^-5 mm. Due to the increased thickness, the minimum safety factor increased to 4.5, which therefore meets the criteria specified in the instructions.
+To meet the minimum SF of 4, we increased the crosshead thickness to 1.5 in and reevaluated it under the same 2 kN load. The stress decreased to a max of 1.22 * 10^7 N/m^2 around the previous area, as before. The deflection was minimal, with a maximum displacement of 6.60 * 10^-5 mm. Due to the increased thickness, the minimum safety factor increased to 4.5, which therefore meets the criteria specified in the instructions.
 
 ## Section 6: Crosshead Drawing - Jarek Hernandez Acaba
 
