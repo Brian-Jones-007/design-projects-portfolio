@@ -338,3 +338,31 @@ To meet the minimum SF of 4, we increased the crosshead thickness to 1.25 in and
 This is the drawing of the crosshead after the noted modifications. 
 
 ![A10Drawing](A10Drawing.PNG)
+
+## Lessons Learned
+
+Brian - 
+
+* **Power Screw Design:** I got a solid grasp on using Acme thread formulas to connect driving torque (T) with linear pull force (Fscrew). It was really interesting to see how changing thread geometry (like the 14.5 thread angle and lead angle ) directly shifts torque needs and friction losses.
+* **Stiffness vs. Strength Realities:** A big takeaway for me was realizing that deflection actually drives the crosshead geometry, not yield strength. To keep our beam under the 0.1mm deflection cap, we had to bump the height all the way up to h=24.4mm (25mm)—which is nearly double what was required just to handle the basic stress loads (h=14.7mm).
+* **Bearing Surface Safety:** I ran the thread bearing stress math across the 6 engaged bronze nut threads. Seeing the calculated stress come out to 3.20MPa against an allowable limit of 30MPa gave me a lot of confidence that the threads won't strip or gall under the 2 kN load.
+* **FBD Communication:** I spent time refining how to take a complicated 3D assembly interface and strip it down into a clean, 2D Free Body Diagram focused only on essential forces, reactions, and dimensions.
+* **Time Tracking:** Working through this assignment took me roughly **5 hours** total:
+  * Setup & Initial Reading: ~1.0 hr
+  * Hand Calculations & Symbolic Derivations: ~2.5 hrs
+  * FBD Drawing & Iterations: ~1.5 hrs
+
+
+Antonio - 
+
+Jarek - 
+
+## CAD FILES - Antonio Goodson & Jarek Hernandez
+
+[Rev1Part](Crosshead.SLDPRT)
+
+[Rev1DRW](Crosshead.SLDDRW)
+
+[Rev2Part](MODIFIEDCrosshead.SLDPRT)
+
+[Rev2DRW](MODIFIEDCrosshead.SLDDRW)
