@@ -152,7 +152,7 @@ $$\sigma_b = \frac{1000\text{ N}}{3.12 \times 10^{-4}\text{ m}^2} \approx 3.20\t
     * Minimum required height for strength ($h_{min, strength}$)
 
 * **b. Free Body Diagram (FBD):**
-  ![Crosshead Beam Bending FBD and Shear Moment Diagram](fbd_crosshead_beam.JPG)
+  ![Crosshead Beam Bending FBD and Shear Moment Diagram](fbd_crosshead_beam_.JPG)
 
 * **c. Symbolic Solution:**
 
