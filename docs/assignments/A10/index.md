@@ -163,7 +163,7 @@ b=1000N3.1210-4m23.20MPa
     * Minimum required height for strength (hmin,strength)
 
 * **b. Free Body Diagram (FBD):**
-  ![Crosshead Beam Bending FBD and Shear Moment Diagram](fbd_crosshead_beam.JPG)
+  ![Crosshead Beam Bending FBD and Shear Moment Diagram](fbd_crosshead_beam_.JPG)
 
 * **c. Symbolic Solution:**
 
