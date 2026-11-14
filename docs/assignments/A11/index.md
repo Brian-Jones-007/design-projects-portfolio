@@ -133,7 +133,7 @@ Develop the motorized drive and structural integration for a 2 kN dual-leadscrew
 
 - *d. Numerical Solution:*
   $$\tau_{allow} = \frac{159.25\text{ MPa}}{4} = 39.81\text{ MPa} \quad (39.81 \times 10^6\text{ Pa})$$
-  Setting $d_i = 8.0\text{ mm} = 0.008\text{ m}$ and solving numerically for $d_o$:
+  Setting $d_i = 8.0\text{ mm} = 0.008\text{ m}$ and solving numerically for $d_o$: 
   $$\frac{16 (1.45\text{ N}\cdot\text{m}) d_o}{\pi (d_o^4 - 0.008^4)} = 39.81 \times 10^6\text{ Pa} \implies d_{o,min} = 8.69\text{ mm}$$
   $$t_{min} = \frac{8.69\text{ mm} - 8.00\text{ mm}}{2} = 0.346\text{ mm}$$
 - *Selected Component:* A standard rigid/beam shaft coupling with **$8\text{ mm}$ bore ($d_i = 8.0\text{ mm}$)** and **$20\text{ mm}$ outer diameter ($d_o = 20.0\text{ mm}$, wall thickness $t = 6.0\text{ mm}$)** is selected to accommodate set-screw/clamping hardware and prevent torsional windup.
