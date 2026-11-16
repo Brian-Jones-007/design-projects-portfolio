@@ -230,11 +230,275 @@ Develop the motorized drive and structural integration for a 2 kN dual-leadscrew
 
 ## Section 7: Parametrically Model (CAD) - Antonio Goodson
 
+
+### Coupler Allignment
+
+The first step of order I took was to insert the coupler and motor. The coupler that I chose was machinable on one side so I changed the inner diameter of that side to be 8 mm to fit the motor shaft. Now the coupler has one side being half an inch and the other 8 mm I was able to connect the motor to the lead screw.
+
+<p align="center">
+  <img src="Couple.png" alt="Couple" width="42%" />
+  <img src="Motors.png" alt="Motors" width="41%" />
+</p>
+
+
+### Motor Mount
+
+Now that I have a motor and coupler attached, I needed to create a mount for the motor so the coupler isn't being interfered with and the motor sits still. The first thing I did was create the necessary equations needed for the amount to do this. I looked at the dimensions of the coupler and motor to fit the Nema 23 sizing.
+
+<p align="center">
+  <img src="Mount_Eq.png" alt="Mount_Eq" width="48%" />
+</p>
+
+With the equations I then create an initial sketch for the parts connected to the motor with this I matched the drawing in the motor listing. I also made sure to create the whole that the coupler would sit in. 
+
+<p align="center">
+  <img src="Mount_Sketch.png" alt="Mount_Sketch" width="38%" />
+</p>
+
+After creating the sketch, I went to extrude the necessary regions by the calculated thickness of .25 in, and exclude the coupler hole and M5 screw holes after this I made the inset worth the motor would sit in.
+
+<p align="center">
+  <img src="Couple_Hole.png" alt="Couple_Hole" width="44%" />
+  <img src="Motor_Inset.png" alt="Motor_Inset" width="41%" />
+</p>
+
+ The next part was to extrude the stem. This was extruded by the height of the coupler with walls of the same thickness as the base.
+
+<p align="center">
+  <img src="Couple_Lenght.png" alt="Couple_Lenght" width="38%" />
+</p>
+
+Last step of the motor mounts was to create the part where it mounts to the frame for this I used the width of the frame which was 0.03 m and made it the length of 3 inches I once again used M5 screw holes and filled in the coupler hole with the exception of a hole needed for the lead screw for this hole I followed the book for a RC3 clearance hole. After doing this, I cleaned up the model.
+
+<p align="center">
+  <img src="Frame_connection.png" alt="Frame_connection" width="43%" />
+  <img src="Cleanup.png" alt="Cleanup" width="37%" />
+</p>
+
+With the mount completed I then added it to the assembly, while including the M5 screws needed, the ones I chose had a length of 12 mm. While doing this, I decided to use the circular pattern to reduce work, which turned out to work perfectly.
+
+<p align="center">
+  <img src="Mount_attached.png" alt="Mount_attached" width="43%" />
+</p>
+
+### Lead Screw Bearing
+
+With the mount completed, I sent the bearing to hold the lead screw in place at the bottom of the frame doing this. I created a list of equations so it helps this list of equations share similarities with the motor mount as it connects to the same type of frame. I made sure to go by the book with a RC3 clearance for a diameter of 0.5 inches.
+
+<p align="center">
+  <img src="Bearing_Eq.png" alt="Bearing_Eq" width="56%" />
+</p>
+
+The steps are the same as the motor mount where I create a sketch to map things out. The sketch is almost identical to the side of the motor mount where it connects to the frame.
+
+<p align="center">
+  <img src="Bearing_Sketch.png" alt="Bearing_Sketch" width="50%" />
+</p>
+
+I extrude the calculated thickness and a certain length to align the lead screw and then clean up the model. This is important as it prevents the lead screw from jumping out of its necessary place, it also prevents the crosshead from rotating.
+
+<p align="center">
+  <img src="Bearing_Shape.png" alt="Bearing_Shape" width="40%" />
+  <img src="Cleanup2.png" alt="Cleanup2" width="43%" />
+</p>
+
+### Assembly
+
+One of the first steps I took in the assembly was to create a hole for the lead screw as seen in the following image. This is important as a private provides a space where the lead screw can actually sit like in the top frame where it goes through and the bottom frame where it has room to move. I then inserted the lead screw bearing and aligned it. After this, I added the necessary bolts to complete the assembly.
+<p align="center">
+  <img src="Clear_Hole.png" alt="Clear_Hole" width="44%" />
+  <img src="Bearing_Fitted.png" alt="Bearing_Fitted" width="39%" />
+</p>
+<p align="center">
+  <img src="Full_Assembly.png" alt="Full_Assembly" width="35%" />
+</p>
+
 ## Section 8: Top Frame FEA Verification - Jarek Hernandez Acaba
+
+To make sure that our top assembly could operate and function while holding the loads, FEAs were conducted on the bases along with the frame.
+
+![fixed](A11FIXED.PNG)
+![loads](A11LOADS.PNG)
+
+Once the loads and fixed points were defined, I created a mesh at stress-raise locations to further study those critical areas. Once the mesh was created, I hit Study and analyzed stress, deflection, and safety factor.
+
+### Coarse
+
+![details](A11COARSEMESHDETAILS.PNG)
+![disp](A11DISPCOARSE.PNG)
+![stress](A11STRESSCOARSE.PNG)
+![SF](A11SFCOARSE.PNG)
+### Normal 
+![details](A11MIDMESHDETAILS.PNG)
+![disp](A11DISP.PNG)
+![stress](A11STRESS.PNG)
+![SF](A11SF.PNG)
+### Fine
+![details](A11FINEMESHDETAILS.PNG)
+![disp](A11DISPFINE.PNG)
+![stress](A11STRESSFINE.PNG)
+![SF](A11SFFINE.PNG)
+
+### Results to Report
+
+| Mesh Level | Elements | Max Displacement (mm) | Max von Mises Stress (MPa) | Min Factor of Safety (SF) | % Change in Stress | % Change in Deflection |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Coarse** | 281,683 | 0.03675 | 9.93 | 28 | — | — |
+| **Medium** | 915,361 | 0.03674 | 11.36 | 24 | +14.39% | -0.03% |
+| **Fine** | 1,640,979 | 0.03673 | 10.98 | 25 | -3.35% | -0.03% |
+
+Both motors have a 1,000N normal load applied symmetrically to their inner faces where the motor would sit on. The forces travel through the cylindrical slot where the shaft coupling would go, and the mounting flanges onto the tracks of the aluminium frame. Due to applied loads that are balanced and centered across the transverse axis of the frame, vertical flexural bending dominates the deformation profile. Torsion and lateral warping factors are so small that they are not accounted for. The model exaggerates the bending of the structure, but it's a good visual representation of what is happening inside the frame.
+
+### Optimization Pass
+
+Results from FEAs were well beyond the proposed limits, with FS ranging from 25 to 28 against a 250MPa yield strength. Given that the stress numbers were so low compared to the 250MPa yield strength, the structure was over-designed, which means that a good optimization pass to focus on was to reduce the mass of the mounts. This could be done by integrating the coupling into the frame. Critical locations for stresses currently concentrate at the shaft inner fillet transitions where the vertical motor mount columns meet the mounting base pads. 
+
+## Section 9: Vertical Standoff FEA Verification - Jarek Hernandez Acaba
+
+### Coarse 
+![details1](A1COARSEMESHDETAILS.PNG)
+![disp1](A1COARSEDISPFORCES.PNG)
+![stress1](A1COARSESTRESSFORCES.PNG)
+![SF1](A1COARSESFFORCES.PNG)
+
+### MID
+
+![details1](A1MIDMESHDETAIL.PNG)
+![disp1](A1DISPMIDFORCES.PNG)
+![stress1](A1MIDSTRESSFORCES.PNG)
+![SF1](A1MIDSFFORCES.PNG)
+
+### Fine
+
+![details1](A1FINEMESHDETAILS.PNG)
+![disp1](A1FINEDISPFORCES.PNG)
+![stress1](A1FORCESTRESS.PNG)
+![SF1](A1SFFORCES.PNG)
+
+### Results to Report
+
 
 ## Section 9: Vertical Standoff FEA Verification - Jarek Hernandez Acaba
 
 ## Bill of Materials & Engineering Cost
+
+<table>
+  <thead>
+    <tr>
+      <th>Item Number</th>
+      <th>Quantity</th>
+      <th>Name</th>
+      <th>Cost Per</th>
+      <th>Cost</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>1/2"-10 Lead Screw</td>
+      <td>$9.90</td>
+      <td>$19.80</td>
+      <td>www.mcmaster.com/98935A823</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>2</td>
+      <td>Flange Nut</td>
+      <td>$125.72 each</td>
+      <td>$251.44</td>
+      <td>www.mcmaster.com/95120A111</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>1</td>
+      <td>T-Slot Framing System</td>
+      <td>$245.87</td>
+      <td>$245.87</td>
+      <td>www.grainger.com/product/80-20-T-Slot-Framing-System-Rectangle-804T48</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2</td>
+      <td>Nema 23 Stepper Motor 2.4Nm 4A 57x57x82mm 8mm</td>
+      <td>$18.92</td>
+      <td>$37.84</td>
+      <td>www.omc-stepperonline.com/nema-23-stepper-motor-2-4nm-339-79oz-in-4a-57x57x82mm-8mm-shaft-4-wires-23hs32-4004s</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>2</td>
+      <td>Machinable-Bore Clamping Shaft Coupling</td>
+      <td>$39.05</td>
+      <td>$78.10</td>
+      <td>www.mcmaster.com/3084K31/</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>1</td>
+      <td>Black-Oxide Alloy Steel Socket Head Screw (100 count)</td>
+      <td>$16.36</td>
+      <td>$16.36</td>
+      <td>www.mcmaster.com/91290A228/</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>2</td>
+      <td>Inside Corner Bracket: Wide Inside-Corner Bracket, 15 Series, 1 1/2 in x 2 13/16 in x 1 1/2 in</td>
+      <td>$9.99</td>
+      <td>$19.98</td>
+      <td>www.grainger.com/product/80-20-Inside-Corner-Bracket-Wide-5JRU9</td>
+    </tr>
+<br>
+    </tr>
+    <tfoot>
+    <tr>
+      <td colspan="2" style="text-align: center; font-weight: bold; background-color: #f9f9f9;">
+        Total Part Cost: $669.39
+      </td>
+    </tr>
+  </tfoot>
+  </tbody>
+</table>
+  <br>
+
+<table>
+  <thead>
+    <tr>
+      <th>Person</th>
+      <th>Hours</th>
+      <th>Hourly</th>
+      <th>Cost</th>
+    </tr>
+  </thead>
+  <body>
+    <tr>
+      <td>Brian</td>
+      <td>5</td>
+      <td>$35</td>
+      <td>$175</td>
+    </tr>
+    <tr>
+      <td>Antonio</td>
+      <td>6</td>
+      <td>$35</td>
+      <td>$210</td>
+    <tr>
+    <tr>
+      <td>Jarek</td>
+      <td>---</td>
+      <td>$35</td>
+      <td>---</td>
+    <tfoot>
+    <tr>
+      <td colspan="2" style="text-align: center; font-weight: bold; background-color: #f9f9f9;">
+      Pay Cost: ----
+      </td>
+    </tr>
+  </tfoot>
+  </body>
+</table>
 
 ## Lessons Learned
 
