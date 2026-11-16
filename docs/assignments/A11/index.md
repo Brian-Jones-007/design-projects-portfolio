@@ -65,7 +65,7 @@ Develop the motorized drive and structural integration for a 2 kN dual-leadscrew
 
 ## Task 1.3 — Motor Selection & Speed-Torque Verification
 
-- *Selected Component:* High-Torque Planetary Geared Stepper / DC Gearmotor (24V DC, 100:1 Planetary Gearbox, rated continuous torque $\ge 2.0\text{ N}\cdot\text{m}$, speed range $0\text{–}30\text{ RPM}$, $8\text{ mm}$ keyed output shaft, NEMA 23 / 4-bolt flange).
+- *Selected Component:* High-Torque Planetary Geared Stepper / DC Gearmotor (24V DC, 100:1 Planetary Gearbox, rated continuous torque $\ge 2.0\text{ N}\cdot\text{m}$, speed range $0\text{–}30\text{ RPM}$, $8\text{ mm}$ D-shaped output shaft, NEMA 23 / 4-bolt flange).
 - *Verification:* At the maximum crosshead speed of $50\text{ mm/min}$ ($19.69\text{ RPM}$), the required torque of $1.45\text{ N}\cdot\text{m}$ sits safely inside the continuous duty envelope of the selected gearmotor.
 - *(Insert annotated Speed-Torque Curve plot here: `![Speed Torque Curve](speed_torque_curve.png)`)*
 
@@ -112,7 +112,7 @@ Develop the motorized drive and structural integration for a 2 kN dual-leadscrew
 - *a. Knowns and Unknowns:*
   - *Knowns:*
     - Transmitted torque ($T_{motor}$): $1.45\text{ N}\cdot\text{m}$
-    - Motor output shaft diameter ($d_{motor}$): $8.0\text{ mm}$ ($0.008\text{ m}$)
+    - Motor output shaft diameter ($d_{motor}$, D-shaped profile): $8.0\text{ mm}$ ($0.008\text{ m}$)
     - Turned lead screw end-journal diameter ($d_{journal}$): $8.0\text{ mm}$ ($0.008\text{ m}$, turned down from $9.75\text{ mm}$ minor diameter of the $1/2\text{"-10}$ Acme screw)
     - Coupler Material (Aluminum 6061-T6): $S_y = 276\text{ MPa}$
     - Shear Yield Strength ($S_{sy}$, Distortion Energy Theory): $0.577 S_y = 159.25\text{ MPa}$
@@ -136,7 +136,7 @@ Develop the motorized drive and structural integration for a 2 kN dual-leadscrew
   Setting $d_i = 8.0\text{ mm} = 0.008\text{ m}$ and solving numerically for $d_o$:
   $\frac{16 (1.45\text{ N}\cdot\text{m}) d_o}{\pi (d_o^4 - 0.008^4)} = 39.81 \times 10^6\text{ Pa} \implies d_{o,min} = 8.69\text{ mm}$
   $t_{min} = \frac{8.69\text{ mm} - 8.00\text{ mm}}{2} = 0.346\text{ mm}$
-- *Selected Component:* A standard rigid/beam shaft coupling with **$8\text{ mm}$ bore ($d_i = 8.0\text{ mm}$)** and **$20\text{ mm}$ outer diameter ($d_o = 20.0\text{ mm}$, wall thickness $t = 6.0\text{ mm}$)** is selected to accommodate set-screw/clamping hardware and prevent torsional windup.
+- *Selected Component:* A standard rigid shaft coupling with **$8\text{ mm}$ D-bore / set-screw clamping ($d_i = 8.0\text{ mm}$)** and **$20\text{ mm}$ outer diameter ($d_o = 20.0\text{ mm}$, wall thickness $t = 6.0\text{ mm}$)** is selected to engage the motor's D-shaft flat without slip or torsional windup.
   $\tau_{actual} = \frac{16 (1.45)(0.020)}{\pi (0.020^4 - 0.008^4)} = 0.947\text{ MPa} \ll 39.81\text{ MPa} \quad (N_{sf} = 168)$
 ---
 
@@ -210,11 +210,11 @@ Develop the motorized drive and structural integration for a 2 kN dual-leadscrew
   - *Knowns:*
     - Nominal lead screw end-journal diameter ($d_{nominal}$): $8.000\text{ mm}$ ($0.3150\text{ in}$, turned end journal of the $1/2\text{"-10}$ Acme screw)
     - Required fit class: **RC3 (Close Running Fit)** per *Machinery's Handbook* ($0.24\text{–}0.40\text{ in}$ / $6\text{–}10\text{ mm}$ basic size range)
-    - Frame mounting fasteners: M6 socket head cap screws
+    - Frame mounting fasteners: M5 socket head cap screws
   - *Unknowns:*
     - Bearing bore upper and lower limits
     - Lead screw shaft journal upper and lower limits
-    - Resulting diametral clearance range and M6 clearance hole dimensions
+    - Resulting diametral clearance range and M5 clearance hole dimensions
 
 - *b. Free Body Diagram (FBD):*
   *(Insert image: `![Floating Bearing Fit Diagram](fbd_a11_floating_bearing.JPG)`)*
@@ -224,7 +224,7 @@ Develop the motorized drive and structural integration for a 2 kN dual-leadscrew
   - **Lead Screw Journal (Shaft, f6):** $-0.013\text{ mm} / -0.022\text{ mm} \implies \mathbf{7.978\text{ mm}\text{ to }7.987\text{ mm}}$
   - **Minimum Clearance:** $8.000\text{ mm} - 7.987\text{ mm} = \mathbf{0.013\text{ mm}}$
   - **Maximum Clearance:** $8.015\text{ mm} - 7.978\text{ mm} = \mathbf{0.037\text{ mm}}$
-  - **M6 Mounting Bolt Clearance Holes (per Machinery's Handbook):** **$6.4\text{ mm}$** (close fit) or **$6.6\text{ mm}$** (normal fit) thru-hole, with a $10.5\text{ mm}$ counterbore if socket head cap screws are recessed.
+  - **M5 Mounting Bolt Clearance Holes (per Machinery's Handbook):** **$5.3\text{ mm}$** (close fit) or **$5.5\text{ mm}$** (normal fit) thru-hole, with a $9.2\text{ mm}$ counterbore if socket head cap screws are recessed.
 
 ---
 
