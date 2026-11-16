@@ -25,7 +25,7 @@ Develop the motorized drive and structural integration for a 2 kN dual-leadscrew
     - Maximum motor speed ($RPM_{max}$)
 
 - *b. Free Body Diagram (FBD):*
-  *(Insert image: `![Rotational Speed Diagram](fbd_a11_motor_speed.JPG)`)*
+  *![Rotational Speed Diagram](fbd_a11_motor_speed.JPG)*
 
 - *c. Symbolic Solution:*
   $$RPM_{min} = \frac{v_{min}}{L}, \quad RPM_{max} = \frac{v_{max}}{L}$$
@@ -51,7 +51,7 @@ Develop the motorized drive and structural integration for a 2 kN dual-leadscrew
     - Mechanical power required at max speed ($P_{max}$)
 
 - *b. Free Body Diagram (FBD):*
-  *(Insert image: `![Motor Torque FBD](fbd_a11_motor_torque.JPG)`)*
+  *![Motor Torque FBD](fbd_a11_motor_torque.JPG)*
 
 - *c. Symbolic Solution:*
   $$T_{screw} = \frac{F_{screw} \cdot d_m}{2} \left( \frac{L + \pi \mu d_m \sec\alpha}{\pi d_m - \mu L \sec\alpha} \right)$$
@@ -67,7 +67,7 @@ Develop the motorized drive and structural integration for a 2 kN dual-leadscrew
 
 - *Selected Component:* High-Torque Planetary Geared Stepper / DC Gearmotor (24V DC, 100:1 Planetary Gearbox, rated continuous torque $\ge 2.0\text{ N}\cdot\text{m}$, speed range $0\text{–}30\text{ RPM}$, $8\text{ mm}$ D-shaped output shaft, NEMA 23 / 4-bolt flange).
 - *Verification:* At the maximum crosshead speed of $50\text{ mm/min}$ ($19.69\text{ RPM}$), the required torque of $1.45\text{ N}\cdot\text{m}$ sits safely inside the continuous duty envelope of the selected gearmotor.
-- *(Insert annotated Speed-Torque Curve plot here: `![Speed Torque Curve](speed_torque_curve.png)`)*
+- *(Insert annotated Speed-Torque Curve plot here: ![Speed Torque Curve](speed_torque_curve.png)*
 
 ---
 
@@ -89,7 +89,7 @@ Develop the motorized drive and structural integration for a 2 kN dual-leadscrew
     - Minimum required bracket thickness ($t_{min}$)
 
 - *b. Free Body Diagram (FBD):*
-  *(Insert image: `![Motor Mount Bearing Stress FBD](fbd_a11_mount_bearing.JPG)`)*
+  *![Motor Mount Bearing Stress FBD](fbd_a11_mount_bearing.JPG)*
 
 - *c. Symbolic Solution:*
   $$\sigma_{b,allow} = \frac{S_y}{N_{sf}}$$
@@ -123,7 +123,7 @@ Develop the motorized drive and structural integration for a 2 kN dual-leadscrew
     - Minimum outer diameter ($d_{o,min}$) and minimum wall thickness ($t_{min}$)
 
 - *b. Free Body Diagram (FBD):*
-  *(Insert image: `![Coupler Torsional Stress FBD](fbd_a11_coupler_torsion.JPG)`)*
+  *![Coupler Torsional Stress FBD](fbd_a11_coupler_torsion.JPG)*
 
 - *c. Symbolic Solution:*
   $\tau_{allow} = \frac{S_{sy}}{N_{sf}} = \frac{0.577 S_y}{N_{sf}}$
@@ -158,7 +158,7 @@ Develop the motorized drive and structural integration for a 2 kN dual-leadscrew
     - Required bracket load rating
 
 - *b. Free Body Diagram (FBD):*
-  *(Insert image: `![Top Frame Twisting FBD](fbd_a11_frame_twist.JPG)`)*
+  *![Top Frame Twisting FBD](fbd_a11_frame_twist.JPG)*
 
 - *c. Symbolic Solution:*
   $$\sum F_z = 0 \implies R_{z,left} + R_{z,right} - 2 F_{screw} = 0 \implies R_z = F_{screw}$$
@@ -190,7 +190,7 @@ Develop the motorized drive and structural integration for a 2 kN dual-leadscrew
     - Buckling Safety Factor ($N_{sf,buckling}$)
 
 - *b. Free Body Diagram (FBD):*
-  *(Insert image: `![Vertical Column Buckling FBD](fbd_a11_column_buckling.JPG)`)*
+  *![Vertical Column Buckling FBD](fbd_a11_column_buckling.JPG)*
 
 - *c. Symbolic Solution:*
   $$P_{cr} = \frac{\pi^2 E I}{(K H)^2}$$
@@ -217,7 +217,7 @@ Develop the motorized drive and structural integration for a 2 kN dual-leadscrew
     - Resulting diametral clearance range and M5 clearance hole dimensions
 
 - *b. Free Body Diagram (FBD):*
-  *(Insert image: `![Floating Bearing Fit Diagram](fbd_a11_floating_bearing.JPG)`)*
+  *![Floating Bearing Fit Diagram](fbd_a11_floating_bearing.JPG)*
 
 - *c. Symbolic & Tolerance Limits Solution:*
   - **Bearing Bore (Hole, H7):** $+0.000\text{ mm} / +0.015\text{ mm} \implies \mathbf{8.000\text{ mm}\text{ to }8.015\text{ mm}}$
