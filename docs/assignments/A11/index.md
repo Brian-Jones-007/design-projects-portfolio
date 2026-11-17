@@ -228,10 +228,10 @@ Develop the motorized drive and structural integration for a 2 kN dual-leadscrew
 
 ---
 
-## Section 7: Parametrically Model (CAD) - Antonio Goodson
+## Section 7: Parametric Model (CAD) - Antonio Goodson
 
 
-### Coupler Allignment
+### Coupler Alignment
 
 The first step of order I took was to insert the coupler and motor. The coupler that I chose was machinable on one side so I changed the inner diameter of that side to be 8 mm to fit the motor shaft. Now the coupler has one side being half an inch and the other 8 mm I was able to connect the motor to the lead screw.
 
@@ -243,19 +243,19 @@ The first step of order I took was to insert the coupler and motor. The coupler 
 
 ### Motor Mount
 
-Now that I have a motor and coupler attached, I needed to create a mount for the motor so the coupler isn't being interfered with and the motor sits still. The first thing I did was create the necessary equations needed for the amount to do this. I looked at the dimensions of the coupler and motor to fit the Nema 23 sizing.
+Now that I have a motor and coupler attached, I needed to create a mount for the motor so the coupler isn't being interfered with and the motor sits still. The first thing I did was create the necessary equations needed to do this. I looked at the dimensions of the coupler and motor to fit the NEMA 23 sizing.
 
 <p align="center">
   <img src="Mount_Eq.png" alt="Mount_Eq" width="48%" />
 </p>
 
-With the equations I then create an initial sketch for the parts connected to the motor with this I matched the drawing in the motor listing. I also made sure to create the whole that the coupler would sit in. 
+With the equations, I then created an initial sketch for the parts connected to the motor; with this I matched the drawing in the motor listing. I also made sure to create the hole that the coupler would sit in. 
 
 <p align="center">
   <img src="Mount_Sketch.png" alt="Mount_Sketch" width="38%" />
 </p>
 
-After creating the sketch, I went to extrude the necessary regions by the calculated thickness of .25 in, and exclude the coupler hole and M5 screw holes after this I made the inset worth the motor would sit in.
+After creating the sketch, I went to extrude the necessary regions by the calculated thickness of .25 in, and excluded the coupler hole and M5 screw holes. After this, I made the inset where the motor would sit.
 
 <p align="center">
   <img src="Couple_Hole.png" alt="Couple_Hole" width="44%" />
@@ -275,7 +275,7 @@ Last step of the motor mounts was to create the part where it mounts to the fram
   <img src="Cleanup.png" alt="Cleanup" width="37%" />
 </p>
 
-With the mount completed I then added it to the assembly, while including the M5 screws needed, the ones I chose had a length of 12 mm. While doing this, I decided to use the circular pattern to reduce work, which turned out to work perfectly.
+With the mount completed, I then added it to the assembly, including the M5 screws needed; the ones I chose had a length of 12 mm. While doing this, I decided to use the circular pattern to reduce work, which turned out to work perfectly.
 
 <p align="center">
   <img src="Mount_attached.png" alt="Mount_attached" width="43%" />
@@ -283,19 +283,19 @@ With the mount completed I then added it to the assembly, while including the M5
 
 ### Lead Screw Bearing
 
-With the mount completed, I sent the bearing to hold the lead screw in place at the bottom of the frame doing this. I created a list of equations so it helps this list of equations share similarities with the motor mount as it connects to the same type of frame. I made sure to go by the book with a RC3 clearance for a diameter of 0.5 inches.
+With the mount completed, I sent the bearing to hold the lead screw in place at the bottom of the frame doing this. I created a list of equations so it helps this list of equations share similarities with the motor mount, as it connects to the same type of frame. I made sure to go by the book with a RC3 clearance for a diameter of 0.5 inches.
 
 <p align="center">
   <img src="Bearing_Eq.png" alt="Bearing_Eq" width="56%" />
 </p>
 
-The steps are the same as the motor mount where I create a sketch to map things out. The sketch is almost identical to the side of the motor mount where it connects to the frame.
+The steps are the same as the motor mount, where I create a sketch to map things out. The sketch is almost identical to the side of the motor mount where it connects to the frame.
 
 <p align="center">
   <img src="Bearing_Sketch.png" alt="Bearing_Sketch" width="50%" />
 </p>
 
-I extrude the calculated thickness and a certain length to align the lead screw and then clean up the model. This is important as it prevents the lead screw from jumping out of its necessary place, it also prevents the crosshead from rotating.
+I extrude the calculated thickness and a certain length to align the lead screw and then clean up the model. This is important as it prevents the lead screw from jumping out of its necessary place; it also prevents the crosshead from rotating.
 
 <p align="center">
   <img src="Bearing_Shape.png" alt="Bearing_Shape" width="40%" />
@@ -304,7 +304,7 @@ I extrude the calculated thickness and a certain length to align the lead screw 
 
 ### Assembly
 
-One of the first steps I took in the assembly was to create a hole for the lead screw as seen in the following image. This is important as a private provides a space where the lead screw can actually sit like in the top frame where it goes through and the bottom frame where it has room to move. I then inserted the lead screw bearing and aligned it. After this, I added the necessary bolts to complete the assembly.
+One of the first steps I took in the assembly was to create a hole for the lead screw, as seen in the following image. This is important as it provides a space where the lead screw can actually sit, like in the top frame where it goes through and the bottom frame where it has room to move. I then inserted the lead screw bearing and aligned it. After this, I added the necessary bolts to complete the assembly.
 <p align="center">
   <img src="Clear_Hole.png" alt="Clear_Hole" width="44%" />
   <img src="Bearing_Fitted.png" alt="Bearing_Fitted" width="39%" />
@@ -312,6 +312,8 @@ One of the first steps I took in the assembly was to create a hole for the lead 
 <p align="center">
   <img src="Full_Assembly.png" alt="Full_Assembly" width="35%" />
 </p>
+
+
 
 ## Section 8: Top Frame FEA Verification - Jarek Hernandez Acaba
 
@@ -354,6 +356,15 @@ Both motors have a 1,000N normal load applied symmetrically to their inner faces
 Results from FEAs were well beyond the proposed limits, with FS ranging from 25 to 28 against a 250MPa yield strength. Given that the stress numbers were so low compared to the 250MPa yield strength, the structure was over-designed, which means that a good optimization pass to focus on was to reduce the mass of the mounts. This could be done by integrating the coupling into the frame. Critical locations for stresses currently concentrate at the shaft inner fillet transitions where the vertical motor mount columns meet the mounting base pads. 
 
 ## Section 9: Vertical Standoff FEA Verification - Jarek Hernandez Acaba
+For this section, I had to analyze the structural assembly that included the two vertical columns, a crossbeam, lower base rails, and the mounts; the reason it was all included is that the forces are happening at the center where the mounts are located. The material for all of the pieces was an alloy with a yield strength of 2.7 * 10^8 N/m^2 (275 MPa). 
+
+Before proceeding with the FEA, I had to define fixed boundaries and apply the loads, which consist of two loads: one being an axial compression of 1000 N each and a transverse load of 1.45 N*m  on each mount. 
+
+### Fixed and loads
+
+![fixed](A1FIXED.PNG)
+![loads](A1TQ.PNG)
+
 
 ### Coarse 
 ![details1](A1COARSEMESHDETAILS.PNG)
@@ -377,8 +388,20 @@ Results from FEAs were well beyond the proposed limits, with FS ranging from 25 
 
 ### Results to Report
 
+| Mesh Level | Elements | Max Displacement (mm) | Max von Mises Stress (MPa) | Min Factor of Safety (SF) | % Change in Stress | % Change in Deflection |
+| :--- | :---: | :---: | :---: | :---: | :---: | :---: |
+| **Coarse** | 470,003 | 0.2774 | 16.95 | 16 | — | — |
+| **Medium** | 1,147,816 | 0.2817 | 16.71 | 16 | -1.42% | +1.55% |
+| **Fine** | 5,258,615 | 0.2847 | 19.97 | 14 | +19.51% | +1.07% |
 
-## Section 9: Vertical Standoff FEA Verification - Jarek Hernandez Acaba
+Deflection converged across all of the refinements, changing by only 1.55% from coarse to medium and 1.07% from medium to fine. Stress numbers were relatively stable between coarse and medium, and the fine mesh increased to 19.97 MPa. The max stress was 19.97 MPa at the corners of the T-slot edges. The max deflection was .287mm at the upper motor mount top flange and the center span of the horizontal cross beam. The factor of safety stayed well above 4%. The two forces I previously stated, 1.45 N*m and the 1000 N loads entered through the motor mount, induce bending and torsion in the upper horizontal crossbeam. The deformed plots reveal noticeable portal frame sway. Another thing I noted was that the 1.45 N*m per-mount torque introduces a slight asymmetric twist along the top crossbeam, causing one side of the upper assembly to deflect slightly further than the opposite upright
+
+### Optimization pass
+
+Some of the proposed targeted changes would be to add some cross bracing to cut the .2847 mm of deflection, as it would make the structure even sturdier. Another thing would be to pocket the non-load-bearing material from the motor mount walls to reduce top-heavy mass, while thickening the base flange pads and increasing the radii to diffuse local clamping stresses. Due to SF being so high, I would also downsize the frame profile in order to make it sturdier, and while it decreases SF, it's a good trade-off to do.
+
+When it comes to shift in critical locations, I would add some larger corner gussets and thicker motor mount flanges to relieve the sharp stress risers currently concentrated at the base's corners and mounting edges. Doing this, the peak stresses will distribute more evenly along the mid-span bending fibers of the vertical uprights. 
+
 
 ## Bill of Materials & Engineering Cost
 
@@ -444,10 +467,10 @@ Results from FEAs were well beyond the proposed limits, with FS ranging from 25 
     </tr>
     <tr>
       <td>7</td>
-      <td>2</td>
+      <td>6</td>
       <td>Inside Corner Bracket: Wide Inside-Corner Bracket, 15 Series, 1 1/2 in x 2 13/16 in x 1 1/2 in</td>
       <td>$9.99</td>
-      <td>$19.98</td>
+      <td>$59.94</td>
       <td>www.grainger.com/product/80-20-Inside-Corner-Bracket-Wide-5JRU9</td>
     </tr>
 <br>
@@ -455,7 +478,7 @@ Results from FEAs were well beyond the proposed limits, with FS ranging from 25 
     <tfoot>
     <tr>
       <td colspan="2" style="text-align: center; font-weight: bold; background-color: #f9f9f9;">
-        Total Part Cost: $669.39
+        Total Part Cost: $709.35
       </td>
     </tr>
   </tfoot>
@@ -484,22 +507,71 @@ Results from FEAs were well beyond the proposed limits, with FS ranging from 25 
       <td>6</td>
       <td>$35</td>
       <td>$210</td>
-    <tr>
+    </tr>
     <tr>
       <td>Jarek</td>
-      <td>---</td>
+      <td>6</td>
       <td>$35</td>
-      <td>---</td>
+      <td>$210</td>
+    </tr>
     <tfoot>
     <tr>
       <td colspan="2" style="text-align: center; font-weight: bold; background-color: #f9f9f9;">
-      Pay Cost: ----
+      Pay Cost: $595
       </td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: center; font-weight: bold; background-color: #f9f9f9;">
+        Project Cost: $1,264.39
     </tr>
   </tfoot>
   </body>
 </table>
 
+
 ## Lessons Learned
 
+### - Brian Jones
+
+- *Time Spent:* 4.5 hours
+- *Key Takeaways:*
+  - I learned how to calculate motor speed (0.394–19.69RPM) and torque ($1.45\text{ N}\cdot\text{m}$) from crosshead velocity (1–50mm/min), screw lead (2.54mm/rev), and friction losses (=0.15, mech=0.90)
+  - I learned that theoretical stress minimums (like a 0.0315mm bracket thickness at Nsf=4) are much thinner than what can be practically machined, so manufacturability governs the final part sizes
+  - I learned how to resolve dual motor reaction torques ($2.90\text{ N}\cdot\text{m}$) into frame stabilizing forces (36.25N) and verify vertical standoff stability using Euler column buckling (Nsf=277.5)
+  - I learned how to use *Machinery's Handbook* to select an RC3 running fit (H7/f6) and M5 clearance holes so the lower lead screw bearing floats axially without binding
+
+### - Antonio Goodson
+
+- *Time Spent:* 6 hours
+- *Key Takeaways:*
+  - Within this assignment, I feel that I was able to research more effectively and with better foresight of how things would work together.
+  - Some setbacks that I encountered were finding the appropriate motor and coupler.
+  - The problem was that finding a motor with a keyed shaft with a diameter of 8 mm was difficult. When I did find one, it cost over $1000, so I switched to a D-shaped shaft and found a stepper motor within the specifications, which greatly reduced the cost.
+  - For the coupler, there was great trouble finding one that would connect an 8 mm to a half inch, so what I did was find a machinable coupler that connected to Half an inch and increase the machining hole in the CAD software.
+
+
+### - Jarek Hernandez
+
+- *Time Spent:* 6 hours
+- *Key Takeaways:*
+  - I was able to get more practice with SolidWorks' FEA modeling tools and learned how to apply multiple loads in this case, one axial compression force while also having a transverse load.
+  - Quickly realized how important it is to have an ample amount of space on your computer to run FEA models.
+  - While looking at supports to assemble the frame, I quickly realized how much variety there is and how important it is to pick the correct brackets to prevent failures.
+  - I also learned how crucial it is to have a good graphics card the bigger the assemblies get due to increase poly count the bigger a toll it takes on your computer.
+  - This is more a review from A7, but I also remembered how important theoretical verification is, by comparing your results from FEA to the original hand calculations to validate simulation results.
+
+
 ## CAD FILES - Antonio Goodson & Jarek Hernandez
+
+[Motor Mount](Motor_Mount.SLDPRT)
+
+[Bearing](Lead_Screw_Bearing.SLDPRT)
+
+[Original_Assembly](A11_Assem.zip)
+
+[Part_1_FEA](A11TOPSTUFF.zip)
+
+[Part_2_FEA](A11FEA2.zip)
+
+
+## 2157 Section
